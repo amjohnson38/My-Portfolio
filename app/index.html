@@ -6,36 +6,186 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/styles.css">
 	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fjalla+One">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.12.0/bootstrap-social.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<!--external javascript libraries-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment-with-locales.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Place Title Here</title>
+	<title>My Portfolio</title>
 </head>
 
 <body>
-	<div class="main-content-wrapper">
-		<div class="main-content">
-			<div class="top-panel homepage-panel">
-				<div class="navigation-wrapper">
-					<ul class="navigation inner-content">
-						<li class="left"><a href="#" class="light">Angela Johnson</a></li>
-						<li><a href="#" class="light">About</a></li>
-						<li><a href="#" class="light">Portfolio</a></li>
-						<li><a href="#" class="light">Contact</a></li>
+	<div id="siteContainer">
+		<div id="portfolioSection">
+			<div id="image1" class="parallax">
+				<div>
+					<ul id="nav">
+						<li><a href="#home">HOME</a></li>
+
+						<li><a href="#about">ABOUT</a></li>
+
+						<li><a href="#portfolio">PORTFOLIO</a></li>
+
+						<li><a href="#contact">CONTACT</a></li>
 					</ul>
 				</div>
-				<div class="inner-content top-panel-text">
-					<h1>Angela Johnson's Portfolio</h1>
-					<p class="subtext">Front End Web Developer</p>
-					<div class="social">
+				<div id="nameContainer" class="animated fadeInLeftBig">
+					<h2 id="name" ><span>Angela Johnson</span></h2>
+				</div>
+				<div id="professContainer">
+					<h5 id="descript1" class="animated fadeInRightBig"><span>Web Developer &amp; Entreprenuer</span></h5>
+				</div>
+			</div>
+
+			<div id="about" class="content portfolioSection">
+				<h1 class="sectionHeading">ABOUT ME</h1>
+				<div id="meSection">
+					<div id="descript2">
+						<p id="myDescript">I'm a self-taught web developer, based in Virginia. My love for learning new concepts and approaches to solving problems,
+							as well as the desire to create websites and other user friendly applications has drawn me to the field of web development.</br>
+							Since making the decision to become a web developer, I've immersed myself in various courses offered through FreeCodeCamp,
+							Udemy and CodeAcademy. When I'm not learning and enhancing my coding skills; I can be found out at the beach, hiking,
+							and enjoying time with my family. If you are an individual, business needing web development services or looking to
+							add to your team, you can contact me <a href="#contact">here</a>.</p>
+					</div>
+					<div><img id="profilePic" src="http://res.cloudinary.com/angiemjohnson/image/upload/v1474110497/AAEAAQAAAAAAAAcnAAAAJDdjNzM4MGMwLWI5NWEtNDc1MC05NzEyLWQ1MGEwNDJmMjFlNg_bw8yex.jpg"
+							alt="personalPhoto"></div>
+				</div>
+				<h3 class="meDescriptHead">Languages and Frameworks:</h3>
+				<div class="languageContainer2">
+					<img id="html" class="skills" src="https://res.cloudinary.com/angiemjohnson/image/upload/v1466281091/html5_axsr0d.png" alt="html5">
+					<img id="css" class="skills" src="https://res.cloudinary.com/angiemjohnson/image/upload/v1466281087/css3_ltq7dp.png" alt="css3">
+					<img id="bootstrap" class="skills" src="https://res.cloudinary.com/angiemjohnson/image/upload/v1466281087/bootstrap_sl0ced.png"
+						alt="bootstrap">
+					<img id="javascript" class="skills" src="https://res.cloudinary.com/angiemjohnson/image/upload/v1466281093/js_lwlzwa.png"
+						alt="javascript">
+					<img id="jQuery" class="skills" src="http://res.cloudinary.com/angiemjohnson/image/upload/v1474716916/jquery-logo_j35oyz.png"
+						alt="jQuery">
+					<img id="php" class="skills" src="http://res.cloudinary.com/angiemjohnson/image/upload/c_scale,w_847/v1474829875/2000px-PHP-logo.svg_l8evzd.png"
+						alt="php">
+				</div>
+				<h3 class="meDescriptHead">Tools:</h3>
+				<div id="toolsContainer">
+					<img id="github" class="skills" src="http://res.cloudinary.com/angiemjohnson/image/upload/v1474717653/github-logo_ugz6d1.png"
+						alt="github">
+					<img id="git" class="skills" src="http://res.cloudinary.com/angiemjohnson/image/upload/v1474718541/download_axz1sb.png" alt="git">
+					<img id="npm" class="skills" src="http://res.cloudinary.com/angiemjohnson/image/upload/v1474728257/npm_0_h02m7m.png" alt="npm">
+				</div>
+			</div>
+			<div id="portfolio" class="content portfolioSection">
+				<h1 class="sectionHeading">Portfolio</h1><br>
+				<div class="projectContainer">
+					<div class="hovereffect portfolioItem">
+						<img class="img-responsive" src="https://res.cloudinary.com/angiemjohnson/image/upload/v1464720691/screenshot-codepen.io_2016-05-31_14-02-00_edvkop.png"
+							alt="randomcodegenerator">
+						<div class="overlay">
+							<h2 class="projectHeading">Random Quote Generator</h2>
+							<p class="imageText">Javascript, JQuery, HTML5, CSS3</p>
+							<a class="http://codepen.io/angiemjohnson95/full/vGQqaZ/" href="">To view project:click here</a>
+						</div>
+					</div>
+					<div class="hovereffect portfolioItem">
+						<img class="img-responsive" src="https://res.cloudinary.com/angiemjohnson/image/upload/v1464719870/screenshot-codepen.io_2016-05-31_14-29-30_a4majq.png"
+							alt="wikipedia viewer">
+						<div class="overlay">
+							<h2 class="projectHeading">Wikipedia Viewer</h2>
+							<p class="imageText">Javascript, JQuery, API, HTML5, CSS3, Responsive</p>
+							<a class="info" href="http://codepen.io/angiemjohnson95/full/vKBMEa/">To view project:click here</a>
+						</div>
+					</div>
+					<div class="hovereffect portfolioItem">
+						<img class="img-responsive" src="http://res.cloudinary.com/angiemjohnson/image/upload/v1472925777/screenshot-codepen.io_2016-09-02_20-22-40_yizkqm.png"
+							alt="Simon Game">
+						<div class="overlay">
+							<h2 class="projectHeading">Simon Game</h2>
+							<p class="imageText">Javascript, JQuery, HTML5, CSS3, Responsive</p>
+							<a class="info" href="http://codepen.io/angiemjohnson95/full/xOgGjN/">To view project:click here</a>
+						</div>
+					</div>
+					<div class="hovereffect portfolioItem">
+						<img class="img-responsive" src="http://res.cloudinary.com/angiemjohnson/image/upload/v1474738180/screenshot-codepen.io_2016-09-24_13-28-29_c6tlsy.png"
+							alt="Weather App">
+						<div class="overlay">
+							<h2 class="projectHeading">Weather App</h2>
+							<p class="imageText">Javascript, JQuery, API HTML5, CSS3, Responsive</p>
+							<a class="info" href="https://codepen.io/angiemjohnson95/full/RaEZzE/">To view project:click here</a>
+						</div>
+					</div>
+					
+				</div>
+				<div class="projectContainer">
+					<div class="hovereffect portfolioItem">
+						<img class="img-responsive" src="http://res.cloudinary.com/angiemjohnson/image/upload/v1470596059/screenshot-codepen.io_2016-08-07_14-44-19_hsguw0.png"
+							alt="JavaScript Calculator">
+						<div class="overlay">
+							<h2 class="projectHeading">JavaScript Calculator</h2>
+							<p class="imageText">Javascript, JQuery, HTML5, CSS3, Responsive</p>
+							<a class="info" href="http://codepen.io/angiemjohnson95/full/QEEvZo">To view project:click here</a>
+						</div>
+					</div>
+					<div class="hovereffect portfolioItem">
+						<img class="img-responsive" src="http://res.cloudinary.com/angiemjohnson/image/upload/v1470595969/screenshot-codepen.io_2016-08-07_14-52-32_kj7ht6.png"
+							alt="Pomodoro Clock">
+						<div class="overlay">
+							<h2 class="projectHeading">Pomodoro Clock</h2>
+							<p class="imageText">Javascript, JQuery, HTML5, CSS3, Responsive</p>
+							<a class="info" href="http://codepen.io/angiemjohnson95/full/JKpyyk/">To view project:click here</a>
+						</div>
+					</div>
+					
+					<div class="hovereffect portfolioItem">
+						<img class="img-responsive" src="http://res.cloudinary.com/angiemjohnson/image/upload/v1470596151/screenshot-codepen.io_2016-08-07_14-42-15_dtjhia.png"
+							alt="Tic Tac Toe">
+						<div class="overlay">
+							<h2 class="projectHeading">Tic Tac Toe</h2>
+							<p class="imageText">Javascript, JQuery, HTML5, CSS3, Responsive</p>
+							<a class="info" href="http://codepen.io/angiemjohnson95/full/dXRYXB/">To view project:click here</a>
+						</div>
+					</div>
+					<div class="hovereffect portfolioItem">
+						<img class="img-responsive" src="http://res.cloudinary.com/angiemjohnson/image/upload/v1474752643/screenshot-codepen.io_2016-09-24_17-29-36_oukwpa.png"
+							alt="Parallax Website">
+						<div class="overlay">
+							<h2 class="projectHeading">Parallax Website Template</h2>
+							<p class="imageText">Javascript, JQuery, HTML5, CSS3</p>
+							<a class="info" href="http://codepen.io/angiemjohnson95/full/qNrbQo/">To see full project:click here</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="contact" class="content portfolioSection">
+				<h1 class="sectionHeading">Contact Me</h1>
+				<div class="contactFormContainer">
+					<form action="https://formspree.io/angiemjohnson95@gmail.com" method="POST">
+						<div>
+							<label>Name</label>
+							<input name="name" placeholder="Name">
+						</div>
+						<div>
+							<label>Email</label>
+							<input name="email" type="email" placeholder="Email">
+						</div>
+						<div>
+							<label>Message</label>
+							<textarea name="message" placeholder="Message"></textarea>
+						</div>
+						<div>
+
+							<input id="submit" name="submit" type="submit" value="Submit">
+						</div>
+					</form>
+					<div class="social text-center center-block">
 						<ul>
-							<li><a href="https://www.facebook.com/reggirl38"><i class="fa fa-lg fa-facebook"></i></a></li>
-							<li><a href="http://twitter.com/reggirl32"><i class="fa fa-lg fa-twitter"></i></a></li>
-							<li><a href="https://github.com/amjohnson38"><i class="fa fa-lg fa-github"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/angelamjohnson95"><i class="fa fa-lg fa-linkedin"></i></a></li>
+							<li><a href="https://www.facebook.com/reggirl38" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+							<li><a href="http://twitter.com/reggirl32" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+							<li><a href="https://github.com/amjohnson38" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/angelamjohnson95" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
 							<li>
 								<a href="https://www.freecodecamp.com/amjohnson38" target="_blank" title="See my Free Code Camp profile!">
 									<i class="fa fa-fire fa-lg"></i></li>
@@ -44,126 +194,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="about-wrapper homepage-panel">
-				<div class="about inner-content">
-					<h2>About Me</h2>
-					<p>I'm an aspiring full-stack developer, based in Virginia. I love learning new concepts and approaches to solving problems,
-						that is why I'm fascinated with web development. When I'm not learning and improving my coding skills; I can be found
-						out at the beach, hiking and enjoying time with my family.</p>
-				</div>
-			</div>
-			<div class="link-boxes inner-content homepage-panel">
-				<h2>Projects</h2>
-				<div class="link-box-wrapper">
-					<div class="link-box">
-						<a class="link-box link box-1" href="#">
-							<div class="lb-overlay lb-top"></div>
-							<div class="lb-top-text">
-								<h3>Project 1</h3>
-								<p>This is some text that I would use to describe whatever this is hiding.</p>
-							</div>
-							<div class="lb-overlay lb-bottom">
-								<h4>Click to View</h4>
-							</div>
-							<div class="lb-screen"></div>
-						</a>
-					</div>
-				</div>
-				<!--
-			  -->
-				<div class="link-box-wrapper">
-					<div class="link-box">
-						<a class="link-box link box-2" href="#">
-							<div class="lb-overlay lb-top"></div>
-							<div class="lb-top-text">
-								<h3>Project 2</h3>
-								<p>This is some text that I would use to describe whatever this is hiding.</p>
-							</div>
-							<div class="lb-overlay lb-bottom">
-								<h4>Click to View</h4>
-							</div>
-							<div class="lb-screen"></div>
-						</a>
-					</div>
-				</div>
-				<div class="link-box-wrapper">
-					<div class="link-box">
-						<a class="link-box link box-3" href="#">
-							<div class="lb-overlay lb-top"></div>
-							<div class="lb-top-text">
-								<h3>Project 3</h3>
-								<p>This is some text that I would use to describe whatever this is hiding.</p>
-							</div>
-							<div class="lb-overlay lb-bottom">
-								<h4>Click to View</h4>
-							</div>
-							<div class="lb-screen"></div>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="link-boxes inner-content homepage-panel">
-				<div class="link-box-wrapper">
-					<div class="link-box">
-						<a class="link-box link box-1" href="#">
-							<div class="lb-overlay lb-top"></div>
-							<div class="lb-top-text">
-								<h3>Project 4</h3>
-								<p>This is some text that I would use to describe whatever this is hiding.</p>
-							</div>
-							<div class="lb-overlay lb-bottom">
-								<h4>Click to View</h4>
-							</div>
-							<div class="lb-screen"></div>
-						</a>
-					</div>
-				</div>
-				<div class="link-box-wrapper">
-					<div class="link-box">
-						<a class="link-box link box-1" href="#">
-							<div class="lb-overlay lb-top"></div>
-							<div class="lb-top-text">
-								<h3>Project 5</h3>
-								<p>This is some text that I would use to describe whatever this is hiding.</p>
-							</div>
-							<div class="lb-overlay lb-bottom">
-								<h4>Click to View</h4>
-							</div>
-							<div class="lb-screen"></div>
-						</a>
-					</div>
-				</div>
-				<div class="link-box-wrapper">
-					<div class="link-box">
-						<a class="link-box link box-1" href="#">
-							<div class="lb-overlay lb-top"></div>
-							<div class="lb-top-text">
-								<h3>Project 6</h3>
-								<p>This is some text that I would use to describe whatever this is hiding.</p>
-							</div>
-							<div class="lb-overlay lb-bottom">
-								<h4>Click to View</h4>
-							</div>
-							<div class="lb-screen"></div>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="contact-wrapper homepage-panel">
-				<h2>Contact Me</h2>
-				<form class="contact inner-content">
-					<input type="text" class="fname textinput" placeholder="First Name">
-					<input type="text" class="lname textinput" placeholder="Last Name">
-					<input type="text" class="company textinput" placeholder="Company">
-					<textarea class="textinput" name="message" cols="40" rows="10" placeholder="Message"></textarea>
-					<input type="button" class="submit" value="Submit" />
-				</form>
-			</div>
+			<footer>
+				<p>Designed & Coded by: Angela Johnson 2016</p>
+			</footer>
 		</div>
-		<!-- Close main content -->
-	</div>
-	<!-- Close main content wrapper -->
 </body>
-<script src="./js/main.js"></script>
+<script src="main.js"></script>
 
 </html>

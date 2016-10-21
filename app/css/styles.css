@@ -1,308 +1,355 @@
-/* Typography and Type Color*/
-h1, h2, h3, h4 {
-	font-family:'Lobster', cursive;
-	font-weight: 400;
+* {
 	margin: 0;
-	color: #333333;
-}
-body, p, a, li {
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: 300;
-	font-size: 20px;
-	color: #333333;
-}
-a {
-	text-decoration: none;
-	transition: 300ms;
-}
-a:hover, a.light:hover, a:active, a.light:active {
-	color: rgb(252, 217, 153);
-}
-a.light {
-	color: #fff;
-	transition: 300ms;
-}
-h1 {
-	font-size: 150px;
-	line-height: 150px;
-	margin-bottom: 30px;
-	text-shadow: 4px 4px #fff;
-}
-h2 {
-	font-size: 70px;
-	line-height: 75px;
-	margin-bottom: 30px;
-	text-shadow: 4px 4px #fff;
-}
-h3 {
-	font-size: 50px;
-	line-height: 55px;
-	margin-bottom: 15px;
-	text-shadow: 3px 3px #fff;
-}
-h4 {
-	font-size: 28px;
-	line-height: 30px;
-	margin-bottom: 15px;
-	text-shadow: 2px 2px #fff;
-}
-
-/* Default Colors */
-body {
-	background-color: #f0f0f0;
-	margin: 0;
-}
-
-/* Main Content Styling */
-.inner-content {
-	max-width: 1080px;
-	margin: auto;
-}
-.homepage-panel {
-	min-height: 100vh;
-}
-
-/* Top panel */
-.top-panel {
-	background: url("https://res.cloudinary.com/angiemjohnson/image/upload/v1466341467/photo-1459593813602-1a7950f37ca7-min_d2c4cp.jpg") no-repeat #000 center;
-	background-size: cover;
-	background-attachment: fixed;
-  background-opacity: 0.5;
-	height: 100vh;
-}
-.top-panel-text {
-	padding-top: 20vh;
-	text-align: center;
-}
-
-/* Navigation */
-.navigation-wrapper {
-	width: 100%;
-	background-color: #333333;
-	position: fixed; 
-	top: 0;
-	z-index: 999999;
-}
-.navigation {
 	padding: 0;
+}
+
+#nav {
+	width: 100%;
+	margin: 0 auto;
 	list-style: none;
-}
-.navigation>li {
-	display: inline-block;
-	box-sizing: border-box;
-	padding: 7px 15px;
-	color: #fff;
-}
-.navigation>li a {
-	color: #fff;
-}
-.navigation>li.right {
+	text-align: right;
 	float: right;
 }
 
-/* About */
-.about-wrapper {
-	background-color: lightskyblue;
-	box-sizing: border-box;
-	padding: 100px 10px;
-	text-align: center;
+#nav li {
+	display: inline-block;
 }
 
-/* Lightboxes */
-.link-boxes {
-	margin: 100px auto;
-	text-align: center;
-	background-color: black;
-}
-.link-box-wrapper {
-  max-height: 480px;
-  max-width: 310px;
-  height: 480px;
-  width: 320px;
-  position: relative;
-  overflow: hidden;
-  background-color: #fff;
-  display: inline-block;
-  vertical-align: top;
-  margin: 10px;
-}
-.link-box {
-  width: 100%;
-  height: 100%;
-}
-.link-box.link.box-1 {
-  background: url("http://fc08.deviantart.net/fs70/i/2013/244/7/0/ram_skull_by_szorny_stock-d6kkdz6.jpg") no-repeat #000 center;
-  background-size: cover;
-}
-.link-box.link.box-2 {
-  background: url("http://fc08.deviantart.net/fs70/i/2013/244/7/0/ram_skull_by_szorny_stock-d6kkdz6.jpg") no-repeat #000 center;
-  background-size: cover;
-}
-.link-box.link.box-3 {
-  background: url("http://fc08.deviantart.net/fs70/i/2013/244/7/0/ram_skull_by_szorny_stock-d6kkdz6.jpg") no-repeat #000 center;
-  background-size: cover;
-}
-.link-box.link {
-  display: block;
-	-webkit-transition: all 0.4s ease-in-out;
-	-moz-transition: all 0.4s ease-in-out;
-	-ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-}
-.lb-overlay {
-  position: absolute;
-  z-index: 100;
-  background-color: #fff;
-  left: 0;
-  right: 0;
-}
-.lb-top {
-  top: 0;
-  height: 70%;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-	transition-property: all;
-	transition-duration: .5s;
-	transition-timing-function: cubic-bezier(0, 1, 0.8, 1);
-}
-.link-box:hover .lb-top {
-  transform: translateY(-350px) scaleX(50);
-}
-.lb-top-text {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 15px;
-  z-index: 200;
-  transition: 300ms;
-}
-.link-box:hover .lb-top-text {
-  transform: translateY(-20px);
-}
-.link-box:hover .lb-top-text>p {
-  opacity: 0;
-}
-.lb-bottom {
-  bottom: 0;
-  height: 0;
-  max-height: 50px;
-	transition-property: all;
-	transition-duration: .5s;
-	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-	text-align: center;
-}
-.lb-bottom h4 {
-	margin-top: 10px;
-	transition: 200ms;
-}
-.link-box:hover .lb-bottom {
-  height: 50px;
-}
-.lb-bottom:hover h4 {
-	transform: scale(1.05);
-}
-.lb-screen {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: #000;
-  opacity: 0.5;
-  z-index:1;
-  transition: 500ms;
-}
-.link-box:hover .lb-screen {
-  opacity: 0;
-}
-
-/* contact panel */
-.contact-wrapper {
-	width: 100%;
-	background-color: rgb(209,231,81);
-	text-align: center;
-	box-sizing: border-box;
-	padding: 100px 20px 50px 20px;
-}
-.textinput {
-	padding: 12px;
-	border-radius: 5px;
-	border: 0;
-	width: 100%;
-	max-width: 700px;
-	margin: 10px 0;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: 300;
-	font-size: 16px;
-}
-textarea {
-	resize: vertical;
-}
-textarea:focus, .textinput:focus {
-	outline: 0;
-}
-.submit {
+#nav a {
 	display: block;
-	margin: 10px auto;
-	border: 0;
-	background: #333333;
+	text-align: right;
+	width: auto;
+	text-decoration: none;
+	font-size: 1.5em;
+	color: #ffdab9;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 400px;
+	padding: 10px;
+	text-shadow: 3px 3px 15px #282e49;
+}
+
+#nav li a:hover {
+	color: #333;
+}
+
+#nameContainer{
+	text-align: center;
+	position: absolute;
+	top: 20%;
+	width: 100%;
+	padding: 40px 0;
+}
+#name {
+	font-family: 'Lobster', cursive;
+	font-size: 500%;
+	color: #282e49;
+	text-shadow: 1px 0px 1px #ff7f59, 0px 1px 1px #ffdab9, 2px 1px 1px #ffdab9, 1px 2px 1px #ffdab9, 3px 2px 1px #ffdab9, 2px 3px 1px #ffdab9, 4px 3px 1px #ffdab9, 3px 4px 1px #ffdab9, 5px 4px 1px #ffdab9, 4px 5px 1px #ffdab9, 6px 5px 1px #ffdab9, 5px 6px 1px #ffdab9, 7px 6px 1px #ff7f59;
+}
+
+#professContainer{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	padding: 40px 0px;
+
+}
+
+.sectionHeading {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 200px;
+	letter-spacing:3px;
+	padding-top: 20px;
+	position: relative;
+	width: 100%;
+	color: #282e49;
+	font-family: 'Fjalla One', sans-serif;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.flexcontainer {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	margin:20px;
+}
+
+#languageContainer #toolsContainer{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+	-webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+	margin:20px;
+}
+
+.skills {
+	height: 110px;
+	padding: 5px;
+	margin: 5px;
+	border-color: white;
+}
+
+#myDescript {
+	font-size: 1.25em;
+	padding: 0px 10px 24px;
+	font-family: "Open Sans";
+	font-weight: 400px;
+	word-spacing: 0.3em;
+	letter-spacing: 2px;
+}
+
+.meDescriptHead {
+	font-weight: bold;
+	font-size: 1.5em;
+	margin: 0px 10px 24px;
+}
+
+#profilePic {
+	border: black solid 5px;
+	
+}
+
+h5 {
+	font-size: 30px;
+	font-weight:bold;
+	color: #282e49;
+	font-family: 'Fjalla One', sans-serif;
+	text-shadow: 0 0 2px #ffdab9;
+
+}
+
+.parallax {
+	min-height:800px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+#image1 {
+	background-image: url("http://res.cloudinary.com/angiemjohnson/image/upload/c_scale,q_83,w_1810/v1472925759/photo-1420768255295-e871cbf6eb81_s6eww1.jpg");
+}
+
+#about {
+	background-color:#FFFAFA;
+}
+
+#portfolio {
+	background-color:#FAEBD7;
+
+
+}
+
+.projectContainer {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	/* works with row or column */
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	margin:30px;
+	-webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+	justify-content: flex-start;
+}
+
+.img-responsive{
+	width:400px;
+	height:400px;
+}
+
+.portfolioItem{
+	width:20%;
+	  min-width: 350px;
+	-webkit-flex: 1 1 350px;
+	flex: 1 1 350px;
+}
+
+.hovereffect {
+  
+  height:100%;
+  margin: 5px 5px 5px 5px;
+  float: left;
+  /*overflow: hidden;*/
+  position: relative;
+  text-align: center;
+  cursor: default;
+   display: flex;
+   justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.imageText{
+	color:#fff;
+	text-transform: uppercase;
+}
+.overlay{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*#image2 {
+background-image: url("http://res.cloudinary.com/angiemjohnson/image/upload/c_scale,w_1722/v1474766202/photo-1444678800462-d8f669c4d5bf_jip9a2.png");
+}
+
+#image3 {
+	background-image: url("http://res.cloudinary.com/angiemjohnson/image/upload/c_scale,w_1722/v1474766202/photo-1444678800462-d8f669c4d5bf_jip9a2.png");
+}*/
+
+#contact {
+	background-color: #FFCCBC;
+}
+
+.content{
+	overflow:hidden;
+	min-height:800px;
+}
+
+
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+	margin-left:20px;
+	text-transform: Uppercase;
+}
+input, textarea {
+	width:90%;
+	height:50px;
+	background:#efefef;
+	border:3px solid;
+	padding:12px;
+	margin-top:3px;
+	margin-left:20px;
+	font-size:0.9em;
+	color:#282e49;
+	text-transform: Uppercase;
+	
+}
+
+
+form {
+    margin:0 auto;
+    width:90%;
+	height:550px;
+	border: 10px solid #282e49;
+	max-width: 600px;
+}
+
+textarea {
+	height:213px;
+}
+
+#submit{
+	background: #282e49;
 	color: #fff;
-	border-radius: 5px;
-	padding: 10px 20px;
-	transition: 200ms;
-	cursor: pointer;
-	box-shadow: 0 10px 0 #000, 0 8px 30px #000;
-	font-family: 'Pacifico', cursive;
-	font-weight: 300;
-	font-size: 18px;
+	font-weight: bold;
+	font-size: 1em;
+	text-transform: Uppercase;
 }
-.submit:hover, .submit:focus {
-	outline: 0;
-}
-.submit:active {
-	box-shadow: 0 5px 0 #000, 0 3px 10px #000;
-	transform: translateY(5px);
-}
-::-webkit-input-placeholder {
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: 300;
-	font-size: 16px;
-}
-:-moz-placeholder { /* Firefox 18- */
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: 300;
-	font-size: 16px;
-}
-::-moz-placeholder {  /* Firefox 19+ */
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: 300;
-	font-size: 16px;
-}
-:-ms-input-placeholder {  
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: 300;
-	font-size: 16px;
-}
+
 .social {
-  margin: 0;
+  margin: 30px;
   padding: 0;
 }
-
 .social ul {
   margin: 0;
   padding: 5px;
 }
-
 .social ul li {
-  margin: 5px;
+  margin: 10px;
   list-style: none outside none;
   display: inline-block;
 }
-
 .social i {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   color: #FFF;
   background-color: #909AA0;
   font-size: 22px;
@@ -318,7 +365,6 @@ textarea:focus, .textinput:focus {
   -o-transition: all ease 0.3s;
   -ms-transition: all ease 0.3s;
 }
-
 .social i:hover {
   color: #FFF;
   text-decoration: none;
@@ -328,28 +374,52 @@ textarea:focus, .textinput:focus {
   -o-transition: all ease 0.3s;
   -ms-transition: all ease 0.3s;
 }
-
 .social .fa-facebook:hover {
   /* round facebook icon*/
+  
   background: #4060A5;
 }
-
 .social .fa-twitter:hover {
   /* round twitter icon*/
+  
   background: #00ABE3;
 }
-
 .social .fa-linkedin:hover {
   /* round linkedin icon*/
+  
   background: #0094BC;
 }
-
 .social .fa-github:hover {
   /* round github icon*/
+  
   background: #343434;
 }
-
 .social .fa-fire:hover {
   /* round github icon*/
+  
   background: #008000;
+}
+#contactText{
+  color:white;
+  text-align:center;
+  font-size: 30px;
+}
+footer{
+  text-align:center;
+	background:#282e49;
+	color:#fff
+}
+
+.portfolioSection #siteContainer .contactFormContainer {
+	display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+}
+
+#meSection{
+	display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
 }
